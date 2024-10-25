@@ -1,0 +1,130 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #ffe6e6;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff0f5;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #ffcccb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff69b4;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #ff6f91;
+}
+
+#message {
+    margin-top: 30px;
+}
+
+#message h2 {
+    color: #ff4081;
+    font-size: 2em;
+}
+
+#message p {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20px;
+}
+
+#question {
+    margin-top: 40px;
+}
+
+#question h2 {
+    font-size: 2.5em;
+    color: #ff1493;
+}
+
+#question button {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2em;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#question button:hover {
+    background-color: #ff1e56;
+}
+
+#contact-form {
+    margin-top: 40px;
+}
+
+#contact-form.hidden {
+    display: none; /* Hide initially */
+}
+
+#contact-form h2 {
+    font-size: 2em;
+    color: #ff4081;
+}
+
+#contact-form p {
+    color: #666;
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Flash Animation */
+.flash {
+    animation: flashAnimation 1s forwards;
+}
+
+@keyframes flashAnimation {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer p {
+    color: #999;
+    font-size: 1em;
+}
+
+footer strong {
+    color: #ff69b4;
+}

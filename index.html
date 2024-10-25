@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Will You Be Mine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello, Beautiful!</h1>
+            <p>You make the world a little brighter every day ❤️</p>
+        </header>
+
+        <section id="message">
+            <h2>I have something special to ask...</h2>
+            <p>Since the moment I met you, everything has felt different, in the best way possible. I can't help but smile when I think of you, and I want to make more memories with you. So...</p>
+        </section>
+
+        <section id="question">
+            <h2>Will You Be My Girlfriend? 💖</h2>
+            <button id="yes-btn">Yes! 😍</button>
+            <button id="no-btn">Let’s Talk</button>
+        </section>
+
+        <!-- Google Form Embed (Initially hidden) -->
+        <section id="contact-form" class="hidden">
+            <h2>Share Your Details</h2>
+            <p>If you'd like to stay connected, please share your contact info below!</p>
+            <div class="form-container">
+                <!-- Paste your Google Form embed code here -->
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmeH7mHs_nym0TMFL6_HzQTdseE1qd9tuLOK7v0577tijmnQ/viewform?embedded=true" width="640" height="719" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with ❤️ by <strong>Your Lover</strong></p>
+        </footer>
+    </div>
+
+    <script>
+        function flashForm() {
+            const form = document.getElementById('contact-form');
+            form.classList.remove('hidden'); // Show the form
+            form.classList.add('flash'); // Add flash effect class
+
+            // Flash effect timeout
+            setTimeout(() => {
+                form.classList.remove('flash'); // Remove flash effect class after 1 second
+            }, 1000);
+        }
+
+        document.getElementById('yes-btn').onclick = function() {
+            flashForm();
+            alert('Yay! Can’t wait for our adventure together! 😘');
+        };
+
+        document.getElementById('no-btn').onclick = function() {
+            flashForm();
+            alert('No worries, we can still talk it over 🙂');
+        };
+    </script>
+</body>
+</html>
